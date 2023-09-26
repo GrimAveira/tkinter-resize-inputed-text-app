@@ -28,7 +28,7 @@ jobs:
         pip install tkinter pytest
 
   test:
-
+    needs: build
     runs-on: self-hosted
 
     steps:
