@@ -1,5 +1,4 @@
 import pytest
-from src.main import MyApp
 
 def entry_handler(value):
     if int (value)<0:
