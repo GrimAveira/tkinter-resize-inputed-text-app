@@ -3,7 +3,7 @@ from tkinter import *
 class MyApp():
     def __init__(self):
         self._root = Tk()
-        self._root.title("METANIT.COM")
+        self._root.title("tkinter-resize-inputed-text-app")
         self._root.geometry("450x450")
 
         self._fontSize=10
