@@ -25,7 +25,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install tkinter pytest
+        pip install pytest
+        pip install tk
 
   test:
     needs: build
@@ -39,7 +40,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install tkinter pytest
+        pip install pytest
+        pip install tk
     - name: Test with pytest
       run: |
         python -m pytest
