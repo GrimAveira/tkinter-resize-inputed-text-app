@@ -1,9 +1,23 @@
 import pytest
+from app import MyApp
 
-def entry_handler(value):
-    if int (value)<0:
-        raise ValueError()
+class MockEventKeyCode:
+    def __init__(self, keycode):
+        self.keycode=keycode
 
-def test_answer():
+@pytest.fixture(scope="module")
+def app():
+    app = MyApp()
+    yield app
+
+def test_entry_handler(app):
     with pytest.raises(ValueError):
-        entry_handler(-1)
+        app.entry_handler(-1)
+def test_font_increase(app):
+    fontSize=app._fontSize
+    app.resize_font_size(MockEventKeyCode(37))
+    assert app._fontSize==fontSize/2
+def test_font_decrease(app):
+    fontSize=app._fontSize
+    app.resize_font_size(MockEventKeyCode(39))
+    assert app._fontSize==fontSize*2
