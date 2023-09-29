@@ -8,7 +8,7 @@
 
 Python application with tkinter, which was able to resize entered text and set his start position.
 
-![Watch the video](./AppPreview.gif)
+![Watch the video](./img/AppPreview.gif)
 
 ## How to install
 

@@ -1,33 +1,22 @@
 # Change log
 
-## 0.0.3 (26-09-2023)
+## 0.0.2 (29-09-2023)
 
-### Created
+### Add
 
-- gitignore
-- CHANGELOG
-- Functions:
-  - apply_coordinates
-  - double_apply_coordinates
-  - resize_font_size
-  - entry_handler
+- Documentation for functions
+- Folder `img`
 
-### Fixed
+### Fix
 
-- Code in `main.py` was divided into logical blocks and formated by PEP8 format
+- `README.md`
+- `CHANGELOG.md`
+- Formating code `app.py`
 
-### REMOVED
+### Remove
 
-## 0.0.2 (25-09-2023)
+- Pytest's dumps
 
-### Fixed
+## 0.0.1 (28-09-2023)
 
-- The application was wrapped in a class
-
-## 0.0.1 (25-09-2023)
-
-### Added
-
-- README
-- LICENSE
-- main.py
+- Initial release
